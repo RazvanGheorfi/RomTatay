@@ -1,0 +1,36 @@
+{% extends 'base.html' %} {% load static %} {% block container %}
+
+<link rel="stylesheet" href="{% static 'main/css/categories.css' %}">
+
+<div class="collections">
+    <div class="wall">
+        <img src="{% static 'main/images/wall.jpg' %}" alt="">
+        <div class="collectionsTitle">Wall Collections</div>
+    </div>
+    <div class="bathroom">
+        <img src="{% static 'main/images/bathroomCollection.jpg' %}" alt="">
+        <div class="collectionsTitle">Bathroom Collections</div>
+    </div>
+    <div class="bathroomAccesories">
+        <img src="{% static 'main/images/bathroomAccesories.jpg' %}" alt="">
+        <div class="collectionsTitle">Bathroom Accesories</div>
+    </div>
+    <div class="showerAccesories">
+        <img src="{% static 'main/images/showerAccesories.jpg' %}" alt="">
+        <div class="collectionsTitle">Shower Accesories</div>
+    </div>
+    <div class="hydrotherapy">
+        <img src="{% static 'main/images/hydrotherapy.jpg' %}" alt="">
+        <div class="collectionsTitle">Hydrotherapy</div>
+    </div>
+    <div class="sanitary">
+        <img src="{% static 'main/images/sanitary.jpg' %}" alt="">
+        <div class="collectionsTitle">Sanitary / Hygiene</div>
+    </div>
+    <div class="bathroomStorage">
+        <img src="{% static 'main/images/bathroomStorage.jpg' %}" alt="">
+        <div class="collectionsTitle">Bathroom Storage</div>
+    </div>
+</div>
+
+{% endblock container %}

@@ -1,0 +1,41 @@
+.collections {
+    width: 95vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 20px;
+}
+
+.collections>* {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    transition: transform .5 ease-in-out;
+}
+
+.collections img {
+    height: 100%;
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.wall:hover img,
+.bathroom:hover img,
+.bathroomAccesories:hover img,
+.showerAccesories:hover img,
+.hydrotherapy:hover img,
+.sanitary:hover img,
+.bathroomStorage:hover img {
+    transform: scale(1.2);
+}
+
+.collectionsTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 26px;
+    transform: translate(-50%, -50%);
+}

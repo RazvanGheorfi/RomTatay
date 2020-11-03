@@ -1,0 +1,165 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/owl.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <title>RomTatay</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="social"> <span>Follow us on: </span>
+            <i class="fa fa-facebook-f"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-pinterest"></i>
+            <i class="fa fa-youtube"></i>
+        </div>
+        <div class="private">PRIVATE AREA</div>
+        <div class="language">ENGLISH</div>
+    </header>
+    <!-- navbar -->
+    <div class="navbar">
+        <nav>
+            <div class="logo"><img src="{% static 'main/images/logo.png' %}" alt=""></div>
+            <div class="hamburger"><i class="fa fa-bars" onclick="hamburger()"></i></div>
+            <div class="navigation">
+                <ul>
+                    <li class="bath"><a href="{% url 'bath' %}"><span class="tweaks"><i class="fa fa-tint"></i></span> Baie</a></li>
+                    <li class="garden"><a href="#"><span class="tweaks">&#10048;</span> Gradinarit</a></li>
+                    <li class="house"><a href="#"><span class="tweaks"><i class="fa fa-home"></i></span> Menaj</a></li>
+                </ul>
+            </div>
+            <!-- Sarch form -->
+            <div class="search">
+                <form class="example" action="action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <!-- mobile navbar -->
+            <div class="mobile-hamburger"><i class="fa fa-bars"></i></div>
+            <div class="mobileNav">
+                <div class="mobileDropdown">
+                    <ul>
+                        <li>Products
+                            <ul>
+                                <li>Baie
+                                    <ul>
+                                        <li>Wall Collections</li>
+                                        <li>Bathroom Collections</li>
+                                        <li>Bathroom Accesories</li>
+                                        <li>Shower Accesories</li>
+                                        <li>Hydrotherapy</li>
+                                        <li>Sanitary / Hygiene</li>
+                                        <li>Bathroom Storage</li>
+                                    </ul>
+                                </li>
+                                <li>Gradinarit
+                                    <ul>
+                                        <li>Garden Accesories</li>
+                                        <li>Irrigation</li>
+                                    </ul>
+                                </li>
+                                <li>Menaj
+                                    <ul>
+                                        <li>Kitchen</li>
+                                        <li>Cleaning</li>
+                                        <li>Storage</li>
+                                        <li>Take Away</li>
+                                        <li>Laundry</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobileSocial"></div>
+            </div>
+
+            <!-- end mobile navbar-->
+        </nav>
+    </div>
+
+    <!-- dropdown-->
+    <div class="dropdown drop" id="dropdown">
+        <ul>
+            <li>
+                <a href="">BAIE</a>
+            </li>
+            <li>
+                <a href="">GRADINARIT</a>
+            </li>
+            <li>
+                <a href="">MENAJ</a>
+            </li>
+            <li>
+                <a href="">DESPRE ROMTATAY</a>
+            </li>
+            <li>
+                <a href="">CONTACT</a>
+            </li>
+        </ul>
+    </div>
+
+    {% block container %} {% endblock %}
+    <!-- footer -->
+    <footer>
+        <div class="footer-about">
+            <img src="{% static 'main/images/logo.png' %}" alt="">
+            <p>Romtatay SA este o societate mixta romano-spaniola, certificata ISO 9001 - 2000, infiintata in 1992, specializata in fabricarea produselor din material plastic realizate prin tehnologia de injectie.</p>
+        </div>
+        <div class="footer-partners">
+            <h3>PARTENERI</h3>
+            <hr>
+            <ul>
+                <li>Artsani</li>
+                <li>Auchan</li>
+                <li>Brico Depot</li>
+                <li>Carrefour</li>
+                <li>Cora</li>
+                <li>Dedeman</li>
+                <li>Mr. Bricolage</li>
+                <li>Selgros</li>
+            </ul>
+        </div>
+        <div class="footer-menu">
+            <h3>Meniu</h3>
+            <hr>
+            <ul>
+                <li>Acasa</li>
+                <li>Promotii RomTatay</li>
+                <li>Produse RomTatay</li>
+                <li>Parteneri</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact</h3>
+            <hr>
+            <p>Bucuresti, Str. Lt. Nicolae Pascu, nr. 81, sector 3, cod postal 032073</p>
+            <p>romtatay@romtatay.ro</p>
+            <p>021.252.79.48</p>
+            <p>021.252.79.46</p>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="{% static 'main/js/jquery.2.min.js' %}"></script>
+    <script src="{% static 'main/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'main/js/jquer.js' %}"></script>
+    <script src="{% static 'main/js/main.js' %}"></script>
+</body>
+
+</html>
