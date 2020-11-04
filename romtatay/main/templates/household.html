@@ -1,0 +1,31 @@
+{% extends 'base.html' %} {% load static %} {% block container %}
+
+<link rel="stylesheet" href="{% static 'main/css/categories.css' %}">
+
+<div class="collections">
+
+    <div class="collectionsGrid">
+        <a href="">
+            <img src="{% static 'main/images/wall.jpg' %}" alt="">
+            <div class="collectionsTitle">Curatenie</div>
+        </a>
+    </div>
+
+    <div class="collectionsGrid">
+        <a href=""> <img src="{% static 'main/images/bathroomCollection.jpg' %}" alt="">
+            <div class="collectionsTitle">Depozitare / Pastrare Alimente</div>
+        </a>
+
+    </div>
+
+    <div class="collectionsGrid">
+        <a href="">
+            <img src="{% static 'main/images/bathroomAccesories.jpg' %}" alt="">
+            <div class="collectionsTitle">Diverse</div>
+        </a>
+    </div>
+
+
+</div>
+
+{% endblock container %}

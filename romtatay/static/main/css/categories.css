@@ -6,28 +6,22 @@
     grid-gap: 20px;
 }
 
-.collections>* {
+.collectionsGrid {
     position: relative;
     text-align: center;
     overflow: hidden;
-    transition: transform .5 ease-in-out;
 }
 
-.collections img {
+.collectionsGrid img {
     height: 100%;
     width: 100%;
     max-height: 400px;
     object-fit: cover;
     cursor: pointer;
+    transition: transform .5s ease;
 }
 
-.wall:hover img,
-.bathroom:hover img,
-.bathroomAccesories:hover img,
-.showerAccesories:hover img,
-.hydrotherapy:hover img,
-.sanitary:hover img,
-.bathroomStorage:hover img {
+.collectionsGrid:hover img {
     transform: scale(1.2);
 }
 

@@ -153,10 +153,6 @@ form button {
   margin: auto;
 }
 
-.mobileNav {
-  display: none;
-}
-
 .image-slider {
   position: relative;
   height: 90vh;

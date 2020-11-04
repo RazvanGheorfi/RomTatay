@@ -6,3 +6,9 @@ def home(request):
 
 def bath(request):
     return render(request, 'bath.html', {})
+
+def gardening(request):
+    return render(request, 'gardening.html', {})
+
+def household(request):
+    return render(request, 'household.html', {})
