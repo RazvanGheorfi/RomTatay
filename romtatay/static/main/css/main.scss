@@ -426,6 +426,14 @@ footer {
     font-size: 14px;
 }
 
+.mobileNav {
+    background: $bodyColor;
+}
+
+.mobileNav ul li {
+    list-style-type: none;
+}
+
 //mobile responsive
 @media (max-width:800px) {
     header {

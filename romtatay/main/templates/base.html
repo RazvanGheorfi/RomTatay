@@ -49,7 +49,7 @@
                 </form>
             </div>
             <!-- mobile navbar -->
-            <div class="mobile-hamburger"><i class="fa fa-bars"></i></div>
+            <div class="mobile-hamburger"><i class="fa fa-bars" onclick="mobileHamburger()"></i></div>
             <!-- end mobile navbar-->
         </nav>
     </div>
@@ -73,6 +73,175 @@
                 <a href="">CONTACT</a>
             </li>
         </ul>
+    </div>
+
+    <div class="mobileNav drop" id="mobileDrop">
+        <div class="mobileNavigator">
+            <ul class="dropDowns">
+                <li><span><i class="fa fa-plus"></i></span>Products
+                    <ul class="drop">
+                        <li><span><i class="fa fa-plus"></i></span>Bath
+                            <div class="drop">
+                                <ul>
+                                    <li><span><i class="fa fa-plus"></i></span>Wall Collections
+                                        <ul class="drop">
+                                            <li>Aluminium wall collections</li>
+                                            <li>Chrome wall collections</li>
+                                            <li>Plastic wall collections</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li><span><i class="fa fa-plus"></i></span>Bathroom Collections
+                                        <ul class="drop">
+                                            <li>Ceramic table top collections</li>
+                                            <li>Plastic table top collections</li>
+                                            <li>Poli-resin table top collections</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li><span><i class="fa fa-plus"></i></span>Bathroom Accesories
+                                        <ul class="drop">
+                                            <li>Mirrors</li>
+                                            <li>Fixing Kits</li>
+                                            <li>Paper holders</li>
+                                            <li>Stool and benches</li>
+                                            <li>Kits de fijacion quick fix</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li><span><i class="fa fa-plus"></i></span>Shower Accesories
+                                        <ul class="drop">
+                                            <li>Anti-slip Mats</li>
+                                            <li>Shelves</li>
+                                            <li>Shower Curtain</li>
+                                            <li>Safety elements</li>
+                                            <li>Shower platforms</li>
+                                            <li>Airer</li>
+                                            <li>Towel rails</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li><span><i class="fa fa-plus"></i></span>Hydrotherapy
+                                        <ul class="drop">
+                                            <li>Shower accesories</li>
+                                            <li>Shower rods</li>
+                                            <li>Shower coluns</li>
+                                            <li>Shower hoses</li>
+                                            <li>Shower kits</li>
+                                            <li>Kits shattafa</li>
+                                            <li>Handshower</li>
+                                            <li>Head shower</li>
+                                            <li>Shower brackets</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li><span><i class="fa fa-plus"></i></span>Sanitary/Hygiene
+                                        <ul class="drop">
+                                            <li>WC Toilets seats</li>
+                                            <li>WC Accesories</li>
+                                            <li>Dust bins</li>
+                                            <li>Toilet brush WC</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li><span><i class="fa fa-plus"></i></span>Bathroom Storage
+                                        <ul class="drop">
+                                            <li>Cabinets</li>
+                                            <li>Auxiliary trolleys</li>
+                                            <li>Shelves</li>
+                                            <li>Fixing kits</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><span><i class="fa fa-plus"></i></span>Gardening
+                            <div class="drop">
+                                <ul>
+                                    <li><span><i class="fa fa-plus"></i></span>Garden Accesories
+                                        <ul class="drop">
+                                            <li>Letterboxes</li>
+                                            <li>Garden showers</li>
+                                            <li>Tools</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li><span><i class="fa fa-plus"></i></span>Irrigation
+                                        <ul class="drop">
+                                            <li>Sprinkles</li>
+                                            <li>Hose accesories</li>
+                                            <li>Irrigation connectors</li>
+                                            <li>Irrigation kits</li>
+                                            <li>Nozzles and spray guns</li>
+                                            <li>PVC Hoses</li>
+                                            <li>Programmers and water timers</li>
+                                            <li>Regadera y pulverizadores</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li><span><i class="fa fa-plus"></i></span>Household
+                            <div class="drop">
+                                <ul><span><i class="fa fa-plus"></i></span>Kitchen
+                                    <ul class="drop">
+                                        <li>Kitchen Accesories</li>
+                                        <li>Kitchen Cannisters</li>
+                                        <li>Dinner Service</li>
+                                        <li>Foot Containers</li>
+                                        <li>Kitchen Ustensils</li>
+                                    </ul>
+                                </ul>
+                                <ul><span><i class="fa fa-plus"></i></span>Cleaning
+                                    <ul class="drop">
+                                        <li>Washing and Buckets</li>
+                                        <li>Dust Bins</li>
+                                        <li>Mop Buckets</li>
+                                        <li>Cleaning Ustensils</li>
+                                        <li>Accesories Limpieza</li>
+                                    </ul>
+                                </ul>
+                                <ul><span><i class="fa fa-plus"></i></span>Storage
+                                    <ul class="drop">
+                                        <li>Storage Boxes</li>
+                                        <li>Baskets and Organizers</li>
+                                        <li>Shelves</li>
+                                        <li>Bathcupboards</li>
+                                    </ul>
+                                </ul>
+                                <ul><span><i class="fa fa-plus"></i></span>Take away
+                                    <ul class="drop">
+                                        <li>Lunch Box</li>
+                                        <li>Urban food</li>
+                                    </ul>
+                                </ul>
+                                <ul><span><i class="fa fa-plus"></i></span>Laundry
+                                    <ul class="drop">
+                                        <li>Laundry Hampers</li>
+                                        <li>Laundry Baskets</li>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>About Tatay</li>
+                <li>Contact</li>
+                <li>Private Area</li>
+                <li>Language</li>
+            </ul>
+        </div>
+        <div class="mobileSocial">
+            <p>Follow us on:</p>
+        </div>
     </div>
 
     {% block container %} {% endblock %}

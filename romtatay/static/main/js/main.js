@@ -4,6 +4,12 @@ function hamburger() {
     var x = document.getElementById('dropdown');
     x.classList.toggle('drop');
 }
+
+function mobileHamburger() {
+    var y = document.getElementById('mobileDrop');
+    y.classList.toggle('drop');
+}
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
